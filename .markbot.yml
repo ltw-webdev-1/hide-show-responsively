@@ -1,0 +1,42 @@
+repo: "hide-show-responsively"
+canvasCourse: "467502"
+canvasAssignment: "4178346"
+
+naming: true
+commits: 2
+
+html:
+  - path: "index.html"
+    locked: true
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit']
+      - ['img']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - '@media only screen and \(min-width: 25em\) \{'
+      - '@media only screen and \(min-width: 38em\) \{'
+      - '@media only screen and \(min-width: 60em\) \{'
+      - 'display: inline-block'
+      - 'display: none'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['float:', 'Use `display: inline-block` not `float` for this assignment']
+
+screenshots:
+  - path: "index.html"
+    sizes: [320, 400, 650, 980]
