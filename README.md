@@ -9,6 +9,7 @@
 
 - *Fork this repository.*
 - Make the correct dinosaur images hide and show on each screen size.
+- Concentrate on `display` and `width`. You don’t need to change the `margin` on anything.
 - **DO NOT change the HTML.**
 - *Run it through Markbot and make sure it passes all the checks.*
 
