@@ -1,9 +1,14 @@
 repo: "hide-show-responsively"
-canvasCourse: "467502"
-canvasAssignment: "4178346"
+canvasCourse: "web-dev-1"
 
 naming: true
-commits: 2
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
 
 html:
   - path: "index.html"
@@ -21,15 +26,15 @@ css:
       - ['html', '-webkit-text-size-adjust', '100%']
       - ['*', 'box-sizing', 'inherit']
       - ['img']
+      - ['@25em', 'img']
+      - ['@38em', 'img']
+      - ['@60em', 'img']
     search:
       - '@-moz-viewport'
       - '@-ms-viewport'
       - '@-o-viewport'
       - '@-webkit-viewport'
       - '@viewport'
-      - '@media only screen and \(min-width: 25em\) \{'
-      - '@media only screen and \(min-width: 38em\) \{'
-      - '@media only screen and \(min-width: 60em\) \{'
       - 'display: inline-block'
       - 'display: none'
     search_not:

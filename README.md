@@ -1,11 +1,12 @@
-# Hide & show responsively
-
-- Approx. completion time: **1 hour**
-- Deliverables: **1 HTML file, 1 CSS file, images**
-
+---
+summary: 'Use media queries and responsive design techniques to hide and show content on different screen sizes.'
+time: '1 hour'
+deliverables: '1 HTML file, 1 CSS file, images'
 ---
 
-**Use media queries and responsive design techniques to hide and show content on different screen sizes.**
+# Hide & show responsively
+
+## Overview
 
 - *Fork this repository.*
 - Make the correct dinosaur images hide and show on each screen size.
@@ -25,7 +26,7 @@
 
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
-- [Final screenshots in the “screenshots” folder.](screenshots)
+- Final screenshots in the “screenshots” folder.
 - [**Watch this video to see how it interacts.**](https://youtu.be/6udtH_bmr0Q)
 
 ---
