@@ -1,14 +1,12 @@
 repo: "hide-show-responsively"
 canvasCourse: "web-dev-1"
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - css
+  - responsive-css
+  - screenshots-all
 
 html:
   - path: "index.html"
@@ -16,32 +14,11 @@ html:
 
 css:
   - path: "css/main.css"
-    valid: true
-    bestPractices: true
     has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['html', 'text-size-adjust', '100%']
-      - ['html', '-moz-text-size-adjust', '100%']
-      - ['html', '-ms-text-size-adjust', '100%']
-      - ['html', '-webkit-text-size-adjust', '100%']
-      - ['*', 'box-sizing', 'inherit']
       - ['img']
       - ['@25em', 'img']
       - ['@38em', 'img']
       - ['@60em', 'img']
     search:
-      - '@-moz-viewport'
-      - '@-ms-viewport'
-      - '@-o-viewport'
-      - '@-webkit-viewport'
-      - '@viewport'
       - 'display: inline-block'
       - 'display: none'
-    search_not:
-      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
-      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
-      - ['float:', 'Use `display: inline-block` not `float` for this assignment']
-
-screenshots:
-  - path: "index.html"
-    sizes: [320, 400, 650, 980]
