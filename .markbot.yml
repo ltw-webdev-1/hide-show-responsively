@@ -5,6 +5,7 @@ inherit:
   - naming-restrict-live
   - git-2
   - css
+  - img-block-100
   - responsive-css
   - screenshots-all
 
@@ -15,10 +16,9 @@ html:
 css:
   - path: "css/main.css"
     has:
-      - ['img']
-      - ['@25em', 'img']
-      - ['@38em', 'img']
-      - ['@60em', 'img']
+      - ['.dino-wrap']
+      - ['@25em', '.dino']
+      - ['@38em', '.dino']
+      - ['@60em', '.dino']
     search:
-      - 'display: inline-block'
       - 'display: none'
